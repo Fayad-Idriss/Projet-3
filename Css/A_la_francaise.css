@@ -1,0 +1,154 @@
+/* Reset Css */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+.icone-header{
+   position: relative;
+   top: 20px;
+   margin-left: 20px;
+   font-size: 1.5em;
+}
+
+#block-header{
+    padding: 10px;
+    height: 35px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.img-header{
+    object-fit: cover;
+}
+
+/* Section image */
+
+.img-section{
+    width: 100%;
+}
+
+/* Section */
+
+#containeur{
+    width: 100%;
+    height: 1200px;
+    margin-top: -20px;
+    background-color: #f2f2f2;
+    border-radius: 50px 50px 0px 0px;
+    
+}
+
+/* partie titre */
+
+.containeur-titre{
+    display: flex;
+    justify-content: space-between;
+}
+
+.titre{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.icone-containeur{
+    margin-top: 40px;
+    margin-right: 30px;
+    font-size: 1.5em;
+}
+
+/* partie carte */
+
+
+.containeur__carte{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.containeur__carte-titre{
+    margin-right: 330px;
+   
+}
+
+.carte{
+    width: 90%;
+    height: 70px;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.carte__liste{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.carte__liste-2{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.euro{
+    margin-right: 15px;
+}
+
+.bouton{
+    padding: 15px;
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 30%;
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 20px;
+}
+
+
+/* footer */
+
+.footer{
+    margin-top: px;
+    height: 230px;
+    background-color: black;
+    color: white;
+}
+
+.footer-title{
+    position: relative;
+    top: 20px;
+    left: 25px;
+}
+
+
+.list-footer{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.text-footer{
+    margin-left: 15px;
+}
+
+.ligne-1{
+    display: flex;
+    margin-top: 10px;
+}
+
+.ligne-2{
+    display: flex;
+    margin-top: 10px;
+    margin-left: -5px;
+   
+}
+
+.ligne-3{
+    margin-top: 10px;
+}
