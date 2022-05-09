@@ -4,6 +4,47 @@
     box-sizing: border-box;
 }
 
+
+/* Police */
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('webfontkit/roboto-bold-webfont.woff2') format('woff2'),
+         url('webfontkit/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('webfontkit/roboto-regular-webfont.woff2') format('woff2'),
+         url('webfontkit/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotothin';
+    src: url('webfontkit/roboto-thin-webfont.woff2') format('woff2'),
+         url('webfontkit/roboto-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'shrikhandregular';
+    src: url('webfontkit/shrikhand-regular-webfont.woff2') format('woff2'),
+         url('webfontkit/shrikhand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
 /* l'en tete */
 
 header{
@@ -69,6 +110,7 @@ input{
 .h3{
     margin-top: 30px;
     font-size: 1.5em;
+    font-family: 'robotobold';
 }
 
 .text__text{
@@ -76,12 +118,14 @@ input{
     font-size: 1.2em;
     display: flex;
     justify-content: center;
+    font-family: 'robotothin';
 }
 
 .text__bouton{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'robotothin';
 }
 
 .text__bouton__containeur{
@@ -90,10 +134,11 @@ input{
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: blueviolet;
+    background-image: linear-gradient(to bottom , #FF79DA , #9356DC );
     color: white;
     border-radius: 20px;
     width: 50%;
+    font-family: 'robotoregular';
 }
 
 /* Block fonctionnement */
@@ -101,6 +146,7 @@ input{
 .fonctionnement__title{
     margin-top: 40px;
     margin-left: 20px;
+    font-family: 'robotobold';
 }
 
 #fonctionnement{
@@ -120,6 +166,7 @@ input{
     width: 90%;
     background-color: #f2f2f2;
     border-radius: 20px;
+    font-family: 'robotoregular';
 }
 .fonctionnement__list__2{
     padding: 25px;
@@ -128,6 +175,7 @@ input{
     width: 90%;
     background-color: #f2f2f2;
     border-radius: 20px;
+    font-family: 'robotoregular';
 }
 .fonctionnement__list__3{
     padding: 25px;
@@ -136,6 +184,7 @@ input{
     width: 90%;
     background-color: #f2f2f2;
     border-radius: 20px;
+    font-family: 'robotoregular';
 }
 
 
@@ -147,17 +196,6 @@ input{
 
 .text__1{
    margin-right: 70px;
-}
-
-.zizi{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -60px;
-    height: 25px;
-    width: 25px;
-    border-radius: 12.5px;
-    background-color: violet;
 }
 
 
@@ -205,8 +243,14 @@ input{
     border-radius: 0px 0px 20px 20px;
 }
 
+.div-text__1--1{
+    font-family: 'robotoregular';
+}
+
+
 .div-text__2--2{
     margin-top: 5px;
+    font-family: 'robotothin';
 }
 
 .icone{
@@ -235,6 +279,9 @@ ul{
     margin-left: 35px;
 }
 
+.footer-title{
+    font-family: 'shrikhandregular';
+}
 
 .list-footer{
     margin-top: 50px;
@@ -244,15 +291,18 @@ ul{
 .ligne-1{
     display: flex;
     margin-top: 10px;
+    font-family: 'robotoregular';
 }
 
 .ligne-2{
     display: flex;
     margin-top: 10px;
     margin-left: -5px;
+    font-family: 'robotoregular';
    
 }
 
 .ligne-3{
     margin-top: 10px;
+    font-family: 'robotoregular';
 }
