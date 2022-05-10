@@ -322,6 +322,11 @@ input{
     font-family: 'robotoregular';
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
+
 
 /* Fin de la partie restaurant */
 
