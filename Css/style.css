@@ -160,6 +160,39 @@ input{
     
 }
 
+.fonctionnement__list__1::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-color: #9356DC;
+    margin-left: -37px;
+    margin-bottom: -30px;
+    border-radius: 15px;
+}
+
+.numero{
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-color: #9356DC;
+    margin-left: -37px;
+    margin-bottom: -30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'robotoregular';
+    color: white;
+   
+}
+
+.icone-1{
+    color: gray;
+    font-size: 1.2em;
+    
+}
+
 .fonctionnement__list__1{
     padding: 25px;
     text-align: center;
@@ -196,6 +229,25 @@ input{
 
 .text__1{
    margin-right: 70px;
+}
+
+
+.box{
+    position: relative;
+}
+
+.nouveau{
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 340px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    z-index: 200;
+    background-color: #99E2D0;
+    color: rgb(28, 130, 28);
+    font-family: 'robotoregular';
 }
 
 
