@@ -1,3 +1,5 @@
+/* Reset CSS */
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@
 }
 
 
-/* Police */
+/* Début de la Police */
 
 @font-face {
     font-family: 'robotobold';
@@ -44,8 +46,10 @@
 }
 
 
+/* Fin de la Police */
 
-/* l'en tete */
+/* Début du Header */
+
 
 header{
     height: 65px;
@@ -59,14 +63,16 @@ header{
     align-items: center;
 }
 
-.img-header{
+.block-header__img--food{
     width: 200px;
     object-fit: cover;
 }
 
-/* fin de l'en tete */
 
-/* début de localisation */
+/* Fin du Header */
+
+/* Début de la partie localisation */
+
 
 #localisation{
     display: flex;
@@ -94,26 +100,30 @@ input{
     color: black;
 }
 
-/* Block-text */
 
-#text{
+/* Fin de la partie localisation */
+
+/* Début du Block-text */
+
+
+#block-text{
     width: 100%;
     height: 250px;
     background-color: #f2f2f2;
 }
 
-.text__titre{
+.block-text__titre{
     display: flex;
     justify-content: center;
 }
 
-.h3{
+.block-text__titre--h3{
     margin-top: 30px;
     font-size: 1.5em;
     font-family: 'robotobold';
 }
 
-.text__text{
+.block-text__text{
     margin-top: 10px;
     font-size: 1.2em;
     display: flex;
@@ -121,14 +131,14 @@ input{
     font-family: 'robotothin';
 }
 
-.text__bouton{
+.block-text__bouton{
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'robotothin';
 }
 
-.text__bouton__containeur{
+.block-text__bouton--degrader{
     margin-top: 30px;
     padding: 10px;
     display: flex;
@@ -141,16 +151,21 @@ input{
     font-family: 'robotoregular';
 }
 
-/* Block fonctionnement */
+
+/* Fin du Block-text */
+
+/* Début du Block fonctionnement */
+
+
+#fonctionnement{
+    margin-top: 40px;
+}
+
 
 .fonctionnement__title{
     margin-top: 40px;
     margin-left: 20px;
     font-family: 'robotobold';
-}
-
-#fonctionnement{
-    margin-top: 40px;
 }
 
 .fonctionnement__list{
@@ -169,28 +184,6 @@ input{
     margin-left: -37px;
     margin-bottom: -30px;
     border-radius: 15px;
-}
-
-.numero{
-    width: 30px;
-    height: 30px;
-    display: block;
-    background-color: #9356DC;
-    margin-left: -37px;
-    margin-bottom: -30px;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'robotoregular';
-    color: white;
-   
-}
-
-.icone-1{
-    color: gray;
-    font-size: 1.2em;
-    
 }
 
 .fonctionnement__list__1{
@@ -220,38 +213,42 @@ input{
     font-family: 'robotoregular';
 }
 
+.fonctionnement__list--numero{
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-color: #9356DC;
+    margin-left: -37px;
+    margin-bottom: -30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'robotoregular';
+    color: white;
+   
+}
 
-.fonctionnement__list--text{
+.fonctionnement__list--div{
     display: flex;
     justify-content: space-around;
 }
 
+.fonctionnement__list--icone{
+    color: gray;
+    font-size: 1.2em;
+    
+}
 
-.text__1{
+.fonctionnement__list--text{
    margin-right: 70px;
 }
 
 
-.box{
-    position: relative;
-}
+/* Fin du Block fonctionnement */
 
-.nouveau{
-    position: absolute;
-    margin-top: -200px;
-    margin-left: 340px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    z-index: 200;
-    background-color: #99E2D0;
-    color: rgb(28, 130, 28);
-    font-family: 'robotoregular';
-}
+/* Début de la partie Restaurant */
 
-
-/* Restaurant */
 
 #block-restaurant{
     margin-top: 50px;
@@ -265,7 +262,7 @@ input{
 }
 
 
-#containeur{
+#block-restaurant__containeur{
     width: 100%;
     height: 1200px;
     margin-top: 70px;
@@ -274,10 +271,12 @@ input{
     justify-content: center;
 }
   
-.box{
+.block-restaurant__box{
+    position: relative;
     width: 90%;
     height: 200px;
 }
+
 
 .img{
     width: 100%;
@@ -286,7 +285,7 @@ input{
     object-fit: cover;
 }
 
-.div-text{
+.block-restaurant__div-text{
     display: flex;
     justify-content: space-between;
     padding: 15px;
@@ -305,11 +304,29 @@ input{
     font-family: 'robotothin';
 }
 
-.icone{
+.block-restaurant--icone{
     font-size: 1.5em;
 }
 
-/* Footer */
+.block-restaurant--nouveau{
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 330px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    z-index: 200;
+    background-color: #99E2D0;
+    color: rgb(28, 130, 28);
+    font-family: 'robotoregular';
+}
+
+
+/* Fin de la partie restaurant */
+
+/* Début du Footer */
+
 
 .footer{
     margin-top: px;
@@ -318,12 +335,12 @@ input{
     color: white;
 }
 
-.footer-title{
+.footer_title{
     position: relative;
     top: 20px;
     left: 25px;
+    font-family: 'shrikhandregular';
 }
-
 
 
 ul{
@@ -331,22 +348,19 @@ ul{
     margin-left: 35px;
 }
 
-.footer-title{
-    font-family: 'shrikhandregular';
-}
-
-.list-footer{
+.footer_list{
     margin-top: 50px;
     margin-left: 30px;
 }
 
-.ligne-1{
+.footer_list--1{
     display: flex;
     margin-top: 10px;
     font-family: 'robotoregular';
 }
+   
 
-.ligne-2{
+.footer_list--2{
     display: flex;
     margin-top: 10px;
     margin-left: -5px;
@@ -354,7 +368,9 @@ ul{
    
 }
 
-.ligne-3{
+.footer_list--3{
     margin-top: 10px;
     font-family: 'robotoregular';
 }
+
+/* Fin du Footer */

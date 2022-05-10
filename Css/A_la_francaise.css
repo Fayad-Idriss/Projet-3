@@ -1,9 +1,14 @@
 /* Reset Css */
 
+
 *{
     margin: 0;
     padding: 0;
 }
+
+/* Fin du reset Css */
+
+/* Début de la partie font */
 
 
 @font-face {
@@ -43,16 +48,19 @@
 }
 
 
+/* Fin de la partie Font */
+
 /* Header */
 
-.icone-header{
+
+.header-icone{
    position: relative;
    top: 20px;
    margin-left: 20px;
    font-size: 1.5em;
 }
 
-#block-header{
+#header-block{
     padding: 10px;
     height: 35px;
     margin-top: -20px;
@@ -61,17 +69,25 @@
     object-fit: cover;
 }
 
-.img-header{
+.header-image{
     object-fit: cover;
 }
 
+
+/* Fin du header */
+
 /* Section image */
+
 
 .img-section{
     width: 100%;
 }
 
-/* Section */
+
+/* Fin de la section image */
+
+/* Grand block-section gris */
+
 
 #containeur{
     width: 100%;
@@ -82,9 +98,6 @@
     bottom: 60px;
 }
 
-/* partie titre */
-
-
 .containeur-titre{
     display: flex;
     justify-content: space-between;
@@ -92,28 +105,31 @@
     font-size: 1.5em;
 }
 
-.titre{
+.containeur--titre{
     margin-top: 40px;
     margin-left: 20px;
 }
 
-.icone-containeur{
+.containeur--icone{
     margin-top: 40px;
     margin-right: 30px;
     font-size: 1.1em;
 }
 
+
+/* Fin du Grand block-section gris */
+
 /* partie carte */
 
 
-.containeur__carte{
+.containeur-carte{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 40px;
 }
 
-.containeur__carte-titre{
+.containeur-carte__titre{
     margin-right: 350px;
     font-family: 'robotothin';
     font-size: 1.2em;
@@ -141,11 +157,11 @@
     font-family: 'robotothin';
 }
 
-.euro{
+.carte-euro{
     margin-right: 15px;
 }
 
-.bouton{
+.containeur-bouton{
     padding: 15px;
     margin-top: 50px;
     margin-left: 150px;
@@ -157,7 +173,11 @@
 }
 
 
+
+/* Fin de la partie carte */
+
 /* footer */
+
 
 .footer{
     height: 230px;
@@ -173,23 +193,18 @@
     font-family: 'shrikhandregular';
 }
 
-
 .list-footer{
     margin-top: 50px;
     margin-left: 30px;
 }
 
-.text-footer{
-    margin-left: 15px;
-}
-
-.ligne-1{
+.list-footer__1{
     display: flex;
     margin-top: 10px;
     font-family: 'robotoregular';
 }
 
-.ligne-2{
+.list-footer__2{
     display: flex;
     margin-top: 10px;
     margin-left: -5px;
@@ -197,7 +212,11 @@
    
 }
 
-.ligne-3{
+.list-footer__3{
     margin-top: 10px;
     font-family: 'robotoregular';
+}
+
+.footer-text{
+    margin-left: 15px;
 }
