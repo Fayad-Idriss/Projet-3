@@ -4,12 +4,13 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="fontawesome/css/all.min.css">
-        <link rel="stylesheet" href="Css/style.css">
+        <link rel="stylesheet" href="Sass/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title></title>
     </head>
+
     <body>
-        
+
         <header>
             <div id="block-header">
                 <p class="block-header__img">
@@ -18,85 +19,80 @@
             </div>
         </header>
 
-        <section>
+        <div id="localisation">
+            <form method="post" action="traitement.php" >
 
-            <div id="localisation">
-                <form method="post" action="traitement.php" >
+                <i class="fa-solid fa-location-dot"></i>
 
-                    <i class="fa-solid fa-location-dot"></i>
+                <p>
+                    <input type="text" value="Paris, Belleville">
+                </p>
+            </form>
+        </div>
 
-                    <p>
-                        <input type="text" value="Paris, Belleville">
-                    </p>
-                </form>
+
+        <div id="block-text">
+            <div class="block-text__titre">
+                <h3 class="block-text__titre--h3"> Réservez le menu qui vous convient</h3>
             </div>
 
-
-            <div id="block-text">
-                <div class="block-text__titre">
-                    <h3 class="block-text__titre--h3"> Réservez le menu qui vous convient</h3>
-                </div>
-
-                <div class="block-text__text">
-                    <p> Découvrez des restaurants d'exception, selectionnés par nos soins</p>
-                </div>
-
-                <div class="block-text__bouton">
-                    <div class="block-text__bouton--degrader">
-                        Explorer nos restaurants
-                    </div>
-                </div>
+            <div class="block-text__text">
+                <p> Découvrez des restaurants d'exception, selectionnés par nos soins</p>
             </div>
 
+            <div class="block-text__bouton">
+                <div class="block-text__bouton--degrader">
+                    Explorer nos restaurants
+                </div>
+            </div>
+        </div>
 
-            <div class="fonctionnement__title">
-                <h2> Fonctionnement </h2>
-            </div> 
 
-            <div id="fonctionnement">
+        <div class="fonctionnement__title">
+            <h2> Fonctionnement </h2>
+        </div> 
+
+        <div id="fonctionnement">
+
+            <div class="fonctionnement__conteneur">
 
                 <div class="fonctionnement__list">
-
-                    <div class="fonctionnement__list__1">
-                        <div class="fonctionnement__list--numero">1</div>
-                        <div class="fonctionnement__list--div">
-                            <div class="fonctionnement__list--icone"> <i class="fa-solid fa-mobile-screen-button"></i> </i> </div>
-                            <p class="fonctionnement__list--text">Choisissez un restaurant</p>
-                        </div>
+                    <div class="fonctionnement__list--numero">1</div>
+                    <div class="fonctionnement__list--div">
+                        <div class="fonctionnement__list--icone"> <i class="fa-solid fa-mobile-screen-button"></i> </i> </div>
+                        <p class="fonctionnement__list--text">Choisissez un restaurant</p>
                     </div>
-                    
+                </div>
+                
 
-                   
-                    <div class="fonctionnement__list__2">
-                        <div class="fonctionnement__list--numero">2</div>
-                        <div class="fonctionnement__list--div">
-                            <div class="fonctionnement__list--icone"> <i class="fa-solid fa-list-ul"></i> </div>
-                            <p class="fonctionnement__list--text">Compossez votre menu</p>
-                        </div>
+               
+                <div class="fonctionnement__list">
+                    <div class="fonctionnement__list--numero">2</div>
+                    <div class="fonctionnement__list--div">
+                        <div class="fonctionnement__list--icone"> <i class="fa-solid fa-list-ul"></i> </div>
+                        <p class="fonctionnement__list--text">Compossez votre menu</p>
                     </div>
-
-                    <div class="fonctionnement__list__3">
-                        <div class="fonctionnement__list--numero">3</div>
-                        <div class="fonctionnement__list--div">
-                            <div class="fonctionnement__list--icone"> <i class="fa-solid fa-store"></i> </div>
-                            <p class="fonctionnement__list--text">Dégustez au restaurant</p>
-                        </div>
-                    </div>
-
                 </div>
 
+                <div class="fonctionnement__list">
+                    <div class="fonctionnement__list--numero">3</div>
+                    <div class="fonctionnement__list--div">
+                        <div class="fonctionnement__list--icone"> <i class="fa-solid fa-store"></i> </div>
+                        <p class="fonctionnement__list--text">Dégustez au restaurant</p>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            
-            
-            <div id="block-restaurant">
+
+        <div id="block-restaurant">
 
             <h2 class="block-restaurant__title"> Restaurants </h2> 
             
                 <div id="block-restaurant__containeur">
                     
                     <div class="block-restaurant__box">
-                        <a href="A_la_francaise.html">
+                        <a href="A_la_francaise.html"></a>
                             <img src="Assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="img" alt="">
                             <div class="block-restaurant__div-text">
                                 <div class="block-restaurant__div">
@@ -134,7 +130,7 @@
                                     <p class="div-text__2--2"> Cité Rouge </p>
                                 </div>
                                 <div class="block-restaurant--icone"> <i class="fa-solid fa-heart"></i> </div>
-                                
+                                <div class="block-restaurant--nouveau">Nouveau</div>
                             </div>
                         </a>
                     </div>
@@ -149,7 +145,7 @@
                                     <p class="div-text__2--2"> Folie-Méricourt </p>
                                 </div>
                                 <div class="block-restaurant--icone"> <i class="fa-solid fa-heart"> </i> </div>
-                                
+                                <div class="block-restaurant--nouveau">Nouveau</div>
                             </div>
                         </a>
                     </div>
@@ -188,3 +184,7 @@
 
     </body>
 </html>
+
+
+
+        
