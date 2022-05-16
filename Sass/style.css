@@ -183,6 +183,29 @@ input {
   font-family: 'robotobold';
 }
 
+.fonctionnement__list {
+  padding: 25px;
+  margin-top: 20px;
+  text-align: center;
+  width: 80%;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  font-family: 'robotoregular';
+}
+
+.fonctionnement__list:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+  background-color: #3462b7;
+  color: white;
+}
+
 #fonctionnement {
   margin-top: 40px;
 }
@@ -196,16 +219,6 @@ input {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-#fonctionnement .fonctionnement__conteneur .fonctionnement__list {
-  padding: 25px;
-  margin-top: 20px;
-  text-align: center;
-  width: 80%;
-  background-color: #f2f2f2;
-  border-radius: 20px;
-  font-family: 'robotoregular';
 }
 
 #fonctionnement .fonctionnement__conteneur .fonctionnement__list--numero {
@@ -237,13 +250,17 @@ input {
       justify-content: space-around;
 }
 
-#fonctionnement .fonctionnement__conteneur .fonctionnement__list--div .fonctionnement__list--icone {
+#fonctionnement .fonctionnement__conteneur .fonctionnement__list--div .fonctionnement__list--text {
+  margin-right: 70px;
+}
+
+.fonctionnement__list--icone {
   color: gray;
   font-size: 1.2em;
 }
 
-#fonctionnement .fonctionnement__conteneur .fonctionnement__list--div .fonctionnement__list--text {
-  margin-right: 70px;
+.fonctionnement__list--icone:hover {
+  color: white;
 }
 
 /* Fin du Block fonctionnement */
@@ -253,18 +270,7 @@ a {
   text-decoration: none;
 }
 
-#block-restaurant {
-  margin-top: 50px;
-  background-color: #f2f2f2;
-}
-
-#block-restaurant .block-restaurant__title {
-  position: relative;
-  top: 40px;
-  margin-left: 20px;
-}
-
-#block-restaurant #block-restaurant__containeur {
+#block-restaurant__containeur {
   width: 100%;
   height: 1200px;
   margin-top: 70px;
@@ -278,13 +284,24 @@ a {
           justify-content: center;
 }
 
-#block-restaurant #block-restaurant__containeur .block-restaurant__box {
+.block-restaurant__title {
+  position: relative;
+  top: 40px;
+  margin-left: 20px;
+}
+
+#block-restaurant {
+  margin-top: 50px;
+  background-color: #f2f2f2;
+}
+
+.block-restaurant__box {
   position: relative;
   width: 90%;
   height: 200px;
 }
 
-#block-restaurant #block-restaurant__containeur .img {
+.img {
   width: 100%;
   height: 200px;
   border-radius: 20px 20px 0px 0px;
@@ -292,7 +309,7 @@ a {
      object-fit: cover;
 }
 
-#block-restaurant #block-restaurant__containeur .block-restaurant__div-text {
+.block-restaurant__div-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -305,24 +322,24 @@ a {
   border-radius: 0px 0px 20px 20px;
 }
 
-#block-restaurant #block-restaurant__containeur .block-restaurant__div-text .div-text__1--1 {
+.div-text__1--1 {
   font-family: 'robotoregular';
 }
 
-#block-restaurant #block-restaurant__containeur .block-restaurant__div-text .div-text__2--2 {
+.div-text__2--2 {
   margin-top: 5px;
   font-family: 'robotothin';
 }
 
-#block-restaurant #block-restaurant__containeur .block-restaurant__div-text .block-restaurant--icone {
+.block-restaurant--icone {
   font-size: 1.5em;
   color: whitesmoke;
 }
 
-#block-restaurant #block-restaurant__containeur .block-restaurant__div-text .block-restaurant--nouveau {
+.block-restaurant--nouveau {
   position: absolute;
-  margin-top: -200px;
-  margin-left: 330px;
+  top: 15px;
+  right: 15px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
@@ -378,11 +395,10 @@ a {
 
 /* Fin du Footer */
 /* début des médiaQueries */
-@media screen and (min-width: 768px) {
+@media all and (min-width: 900px) {
   .fonctionnement__list {
     width: 30%;
     margin-left: 20px;
-    background-color: red;
   }
   #block-restaurant__containeur {
     height: 700px;

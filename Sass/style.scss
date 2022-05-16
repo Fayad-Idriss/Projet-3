@@ -168,7 +168,7 @@ input{
     width: 80%;
     background-color: #f2f2f2;
     border-radius: 20px;
-    font-family: 'robotoregular';
+    font-family: 'robotoregular';        
 }
 
 
@@ -179,6 +179,19 @@ input{
 
 }
 
+.fonctionnement__list{
+    @include fonctionnement()
+}
+
+.fonctionnement__list:hover{
+    transform: scale(1.1);
+    transition-property: transform;
+    transition-duration: 1000ms;
+    background-color: rgb(52, 98, 183);
+    color: white;
+}
+
+
 #fonctionnement{
     margin-top: 40px;
 
@@ -186,9 +199,6 @@ input{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        .fonctionnement__list{
-            @include fonctionnement()
-       }
         .fonctionnement__list--numero{
             width: 30px;
             height: 30px;
@@ -202,16 +212,12 @@ input{
             justify-content: center;
             font-family: 'robotoregular';
             color: white;
+            
            
         }
         .fonctionnement__list--div{
             display: flex;
             justify-content: space-around;
-            .fonctionnement__list--icone{
-                color: gray;
-                font-size: 1.2em;
-                
-            }
             
             .fonctionnement__list--text{
                margin-right: 70px;
@@ -221,6 +227,15 @@ input{
         }
                 
     }
+}
+
+.fonctionnement__list--icone{
+    color: gray;
+    font-size: 1.2em;
+}
+
+.fonctionnement__list--icone:hover{
+    color:white;
 }
 
 
@@ -234,74 +249,77 @@ a{
     text-decoration: none;
 }
 
+#block-restaurant__containeur{
+    width: 100%;
+    height: 1200px;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.block-restaurant__title{
+    position: relative;
+    top: 40px;
+    margin-left: 20px;
+}
+
 #block-restaurant{
     margin-top: 50px;
     background-color: #f2f2f2;
-    .block-restaurant__title{
-        position: relative;
-        top: 40px;
-        margin-left: 20px;
-    }
 
-    #block-restaurant__containeur{
-        width: 100%;
-        height: 1200px;
-        margin-top: 70px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        .block-restaurant__box{
-            position: relative;
-            width: 90%;
-            height: 200px;
-        }
-        .img{
-            width: 100%;
-            height: 200px;
-            border-radius: 20px 20px 0px 0px;
-            object-fit: cover;
-        }
-        .block-restaurant__div-text{
-            display: flex;
-            justify-content: space-between;
-            padding: 15px;
-            background-color: white;
-            margin-top: -5px;
-            border-radius: 0px 0px 20px 20px;
-            .div-text__1--1{
-                font-family: 'robotoregular';
-            }
-            
-            
-            .div-text__2--2{
-                margin-top: 5px;
-                font-family: 'robotothin';
-            }
-            
-            .block-restaurant--icone{
-                font-size: 1.5em;
-                color: whitesmoke;
-                
-            }
-            
-            
-            .block-restaurant--nouveau{
-                position: absolute;
-                margin-top: -200px;
-                margin-left: 330px;
-                padding-left: 10px;
-                padding-right: 10px;
-                padding-top: 5px;
-                padding-bottom: 5px;
-                z-index: 200;
-                background-color: #99E2D0;
-                color: rgb(28, 130, 28);
-                font-family: 'robotoregular';
-            }
-        }
-    }
 }
 
+.block-restaurant__box{
+    position: relative;
+    width: 90%;
+    height: 200px;    
+}
+
+.img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+
+.block-restaurant__div-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: white;
+    margin-top: -5px;
+    border-radius: 0px 0px 20px 20px;
+}
+.div-text__1--1{
+    font-family: 'robotoregular';
+}
+
+.div-text__2--2{
+    margin-top: 5px;
+    font-family: 'robotothin';
+}
+
+.block-restaurant--icone{
+    font-size: 1.5em;
+    color: whitesmoke;
+    
+}
+
+.block-restaurant--nouveau{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    z-index: 200;
+    background-color: #99E2D0;
+    color: rgb(28, 130, 28);
+    font-family: 'robotoregular';
+}
 
 /* Fin de la partie restaurant */
 
@@ -358,12 +376,12 @@ a{
 
 
 
-@media screen and ( min-width: 768px ){
+@media all and (min-width: 900px){
 
+    
     .fonctionnement__list{
         width: 30%;
         margin-left: 20px;
-        background-color: red;
     }
 
 
@@ -378,4 +396,6 @@ a{
     
   
 }
+
+
 
