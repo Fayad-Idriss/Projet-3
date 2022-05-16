@@ -182,7 +182,7 @@ input{
     
 }
 
-.fonctionnement__list__1::before{
+.fonctionnement__list__bouton::before{
     content: '';
     width: 30px;
     height: 30px;
@@ -193,7 +193,7 @@ input{
     border-radius: 15px;
 }
 
-.fonctionnement__list__1{
+.fonctionnement__list__bouton{
     padding: 25px;
     text-align: center;
     width: 90%;
@@ -202,7 +202,7 @@ input{
     font-family: 'robotoregular';
 }
 
-.fonctionnement__list__1:hover{
+.fonctionnement__list__bouton:hover{
     transform: scale(1.1);
     transition-property: transform;
     transition-duration: 1000ms;
@@ -211,7 +211,7 @@ input{
 }
 
 
-.fonctionnement__list__2:hover{
+.fonctionnement__list__bouton:hover{
     transform: scale(1.1);
     transition-property: transform;
     transition-duration: 1000ms;
@@ -219,7 +219,7 @@ input{
     color: white;
 }
 
-.fonctionnement__list__3:hover{
+.fonctionnement__list__bouton:hover{
     transform: scale(1.1);
     transition-property: transform;
     transition-duration: 1000ms;
@@ -231,7 +231,7 @@ input{
     color:white;
 }
 
-.fonctionnement__list__2{
+.fonctionnement__list__bouton{
     padding: 25px;
     margin-top: 20px;
     text-align: center;
@@ -240,7 +240,7 @@ input{
     border-radius: 20px;
     font-family: 'robotoregular';
 }
-.fonctionnement__list__3{
+.fonctionnement__list__bouton{
     padding: 25px;
     margin-top: 20px;
     text-align: center;
@@ -424,16 +424,8 @@ ul{
 
 @media screen and ( min-width: 992px ){
 
-    .fonctionnement__list__1{
-         width: 30%;
-    }
 
-    .fonctionnement__list__2{
-         width: 30%;
-         margin-left: 20px;
-    }
-
-    .fonctionnement__list__3{
+    .fonctionnement__list__bouton{
          width: 30%;
          margin-left: 20px;
     }

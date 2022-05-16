@@ -128,7 +128,7 @@ a{
 
 .containeur-carte{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 40px;
 }
@@ -166,9 +166,9 @@ a{
 }
 
 .containeur-bouton{
+    margin-left: 32%;
     padding: 15px;
     margin-top: 50px;
-    margin-left: 150px;
     width: 30%;
     text-align: center;
     background-image: linear-gradient(to bottom , #FF79DA , #9356DC );
@@ -228,10 +228,19 @@ a{
 
 
 @media screen and ( min-width: 768px ){
+
+    h3{
+        width: 100%;
+        margin-left: 20px;
+    }
     
-    .containeur-carte{
-       width: 33%;
+    .containeur-carte .carte{
+       width: 30%;
        
+   }
+
+   #containeur{
+       height: 750px;
    }
 
 }
