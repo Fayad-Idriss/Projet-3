@@ -96,7 +96,7 @@ a{
 
 #containeur{
     width: 100%;
-    height: 700px;
+    height: 1200px;
     background-color: #f2f2f2;
     border-radius: 50px 50px 0px 0px;
     position: relative;
@@ -126,11 +126,23 @@ a{
 
 /* partie carte */
 
+@mixin carte {
+        width: 80%;
+        height: 70px;
+        margin-top: 15px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 5px 1px 5px rgba(0,0,0,0.2);
+       
+        
+}
 
 .containeur-carte__titre{
     margin-right: 350px;
     font-family: 'robotothin';
     font-size: 1.2em;
+    
+
    
 }
 
@@ -142,16 +154,30 @@ a{
     margin-top: 40px;
 
     .carte{
-        width: 90%;
-        height: 70px;
-        margin-top: 15px;
-        background-color: white;
-        border-radius: 15px;
+       @include carte();
+       animation-name: animation;
+       animation-duration: 0.5s;
+
     }
+
+    .carte-2{
+       @include carte();
+       animation-name: animation;
+       animation-duration: 3s;
+       
+    }
+ 
+    .carte-3{
+        @include carte();
+        animation-name: animation;
+        animation-duration: 5s;
+    }
+         
 
     .carte__liste{
         margin-top: 10px;
         margin-left: 15px;
+        flex-wrap: nowrap;
         font-family: 'robotoregular';
     }
 
@@ -159,13 +185,21 @@ a{
         margin-top: 5px;
         display: flex;
         justify-content: space-between;
+        flex-wrap: nowrap;
         font-family: 'robotothin';
+        flex-wrap: nowrap;
 
-        .carte-euro{
-            margin-right: 15px;
-        }
     }
 
+}
+
+@keyframes animation {
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1);
+    }
 }
 
 .containeur-bouton{
@@ -179,6 +213,143 @@ a{
     border-radius: 20px;
 }
 
+.containeur-animation{
+    margin-top: -40px;
+    margin-right: 1px;
+    width: 70px;
+    height: 70px;
+    background-color: #99E2D0;
+    border-radius: 0px 15px 15px 0px;
+    transform-origin: 100% 0%;
+    transform: scaleX(0);
+    transition: transform 1s;
+}
+
+
+
+.carte__animation{
+    display: flex;
+    margin-top: -40px;
+    overflow: hidden;
+    
+}
+
+.carte-euro{
+    display: flex;
+    align-items: flex-end;
+    width: 25px;
+    height: 70px;
+    margin-right: 20px;
+    margin-top: -5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.animation{
+    margin-right: -50px;
+    width: 50px;
+    height: 70px;
+    background-color: #99E2D0;
+    border-radius: 0px 15px 15px 0px;
+    
+}
+
+.carte--icone{
+    display: flex;
+    justify-content: center;
+    margin-top: 50%;
+    font-size: 20px;
+    color: white;
+}
+
+@keyframes spinner {
+    0%{
+        rotate: (-270deg);
+
+    }
+
+    100%{
+        rotate: (0);
+    }
+}
+
+.carte:hover{
+    
+    .animation{
+        margin: 0;
+        transition: 0.5s;
+    }
+
+    .carte--icone{
+        transform: rotate(360deg);
+        transition-duration: 0.5s;
+        
+    }
+}
+
+.carte-2:hover{
+    
+    .animation{
+        margin: 0;
+        transition: 0.5s;
+    }
+
+    .carte--icone{
+        transform: rotate(360deg);
+        transition-duration: 0.5s;
+        
+    }
+}
+
+.carte-3:hover{
+    
+    .animation{
+        margin: 0;
+        transition: 0.5s;
+    }
+
+    .carte--icone{
+        transform: rotate(360deg);
+        transition-duration: 0.5s;
+        
+    }
+}
+
+
+p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*
+
+span{
+    position: relative; 
+    top: 30%;
+    left: 80%;   
+    transform: rotate(-360deg);
+    transition-duration: 2s;
+    background-color: #99E2D0;
+    color: blue;
+}
+    
+
+
+.carte:hover{
+    .containeur-animation{ 
+    transform: scaleX(1);
+    
+    }
+      i{
+           margin-left: -40%;
+           transform: rotate(360deg);
+           transition-duration: 0.5s;
+        }
+}
+
+*/
+
 
 /* Fin de la partie carte */
 
@@ -188,7 +359,7 @@ a{
 .footer-title{
     position: relative;
     top: 20px;
-    left: 25px;
+    left: 30px;
     font-family: 'shrikhandregular';
 }
 
@@ -198,16 +369,17 @@ a{
     color: white;
     margin-top: -60px;
 
+
     .list-footer{
-        margin-top: 50px;
-        margin-left: 30px;
+        margin-left: 20px;
+        margin-top: 30px;
 
         .list-footer__1{
             display: flex;
             margin-top: 10px;
             font-family: 'robotoregular';
         }
-        
+    
         .list-footer__2{
             display: flex;
             margin-top: 10px;
@@ -219,14 +391,14 @@ a{
         .list-footer__3{
             margin-top: 10px;
             font-family: 'robotoregular';
-        }        
+        }     
     }
 }
-
 
 .footer-text{
     margin-left: 15px;
 }
+    
 
 /* Fin du footer */
 
@@ -239,5 +411,9 @@ a{
     
     .containeur-carte .carte{
        width: 30%;
+   }
+
+   #containeur{
+       height: 700px;
    }
 }

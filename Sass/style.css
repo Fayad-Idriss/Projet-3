@@ -76,7 +76,6 @@ header .block-header__img .block-header__img--food {
           align-items: center;
   width: 100%;
   height: 50px;
-  margin-top: px;
   background-color: #5e585846;
 }
 
@@ -202,8 +201,12 @@ input {
   transition-property: transform, -webkit-transform;
   -webkit-transition-duration: 1000ms;
           transition-duration: 1000ms;
-  background-color: #3462b7;
+  background-color: #fef0fc;
   color: white;
+}
+
+.fonctionnement__list:hover .fonctionnement__list--icone {
+  color: #9356DC;
 }
 
 #fonctionnement {
@@ -257,10 +260,6 @@ input {
 .fonctionnement__list--icone {
   color: gray;
   font-size: 1.2em;
-}
-
-.fonctionnement__list--icone:hover {
-  color: white;
 }
 
 /* Fin du Block fonctionnement */
@@ -333,7 +332,17 @@ a {
 
 .block-restaurant--icone {
   font-size: 1.5em;
-  color: whitesmoke;
+  color: white;
+  background-color: black;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.block-restaurant--icone:active {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  color: transparent;
 }
 
 .block-restaurant--nouveau {
