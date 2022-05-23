@@ -36,6 +36,59 @@
 }
 
 /* Fin de la Police */
+/* Début de la partie loader */
+
+.page-loading{
+  position: fixed;
+  display: grid;
+  background-color: #f2f2f2;
+  inset: 0;
+  z-index: 300;
+  animation: chargement 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  
+
+}
+
+
+#loading {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgb(26 108 97 / 56%);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s  ease-in-out;
+  -webkit-animation: spin 1s ease-in-out ;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes chargement {
+  0%{ 
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+
+/* fin de la partie loader */
 /* Début de la partie header */
 header {
   height: 65px;
@@ -332,17 +385,16 @@ a {
 
 .block-restaurant--icone {
   font-size: 1.5em;
-  color: white;
   background-color: black;
+  color: transparent;
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
 }
 
-.block-restaurant--icone:active {
+.block-restaurant--icone:hover {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
-  color: transparent;
 }
 
 .block-restaurant--nouveau {

@@ -50,6 +50,10 @@
 
 /* Fin de la Police */
 
+/* Début de la partie loader */
+
+  /* fin de la partie loader */
+
 
 /* Début de la partie header */
 
@@ -301,17 +305,17 @@ a{
 
 .block-restaurant--icone{
     font-size: 1.5em;
-    color: white;
     background-color: black;
+    color: transparent;
     background-size: cover;
     background-clip: text;
     -webkit-background-clip: text;
     
 }
 
-.block-restaurant--icone:active{
+.block-restaurant--icone:hover{
     background-image: linear-gradient(to bottom , #FF79DA , #9356DC );
-    color: transparent;
+    
 }
 
 .block-restaurant--nouveau{

@@ -117,10 +117,18 @@ a{
             margin-top: 40px;
             margin-right: 30px;
             font-size: 1.1em;
+            background-color: black;
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
         }
     }
 }
 
+.containeur--icone:hover{
+    background-image: linear-gradient(to bottom , #FF79DA , #9356DC );
+    color: transparent;
+}
 
 /* Fin du Grand block-section gris */
 
@@ -211,6 +219,13 @@ a{
     background-image: linear-gradient(to bottom , #FF79DA , #9356DC );
     color: white;
     border-radius: 20px;
+}
+
+.containeur-bouton:hover{
+    transform: scale(1.2);
+    transition-property: transform;
+    transition-duration: 1000ms;
+    opacity: 0.7;
 }
 
 .containeur-animation{
