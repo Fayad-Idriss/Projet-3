@@ -135,7 +135,7 @@ a{
 /* partie carte */
 
 @mixin carte {
-        width: 80%;
+        width: 90%;
         height: 70px;
         margin-top: 15px;
         background-color: white;
@@ -146,7 +146,7 @@ a{
 }
 
 .containeur-carte__titre{
-    margin-right: 350px;
+    width: 100%;
     font-family: 'robotothin';
     font-size: 1.2em;
     
@@ -277,17 +277,6 @@ a{
     color: white;
 }
 
-@keyframes spinner {
-    0%{
-        rotate: (-270deg);
-
-    }
-
-    100%{
-        rotate: (0);
-    }
-}
-
 .carte:hover{
     
     .animation{
@@ -336,34 +325,6 @@ p{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
-/*
-
-span{
-    position: relative; 
-    top: 30%;
-    left: 80%;   
-    transform: rotate(-360deg);
-    transition-duration: 2s;
-    background-color: #99E2D0;
-    color: blue;
-}
-    
-
-
-.carte:hover{
-    .containeur-animation{ 
-    transform: scaleX(1);
-    
-    }
-      i{
-           margin-left: -40%;
-           transform: rotate(360deg);
-           transition-duration: 0.5s;
-        }
-}
-
-*/
 
 
 /* Fin de la partie carte */

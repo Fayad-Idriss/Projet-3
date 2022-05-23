@@ -51,6 +51,21 @@
 /* Fin de la Police */
 
 /* Début de la partie loader */
+   
+.page-loading{
+    background-color: #f2f2f2;
+
+
+}
+
+#loading{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 5px solid green;
+    
+
+}
 
   /* fin de la partie loader */
 

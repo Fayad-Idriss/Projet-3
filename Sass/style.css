@@ -37,56 +37,16 @@
 
 /* Fin de la Police */
 /* Début de la partie loader */
-
-.page-loading{
-  position: fixed;
-  display: grid;
+.page-loading {
   background-color: #f2f2f2;
-  inset: 0;
-  z-index: 300;
-  animation: chargement 2s;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
-  
-
 }
-
 
 #loading {
   display: inline-block;
   width: 50px;
   height: 50px;
-  border: 5px solid rgb(26 108 97 / 56%);
-  border-radius: 50%;
-  border-top-color: #fff;
-  animation: spin 1s  ease-in-out;
-  -webkit-animation: spin 1s ease-in-out ;
-  position: fixed;
-  top: 50%;
-  left: 50%;
+  border: 5px solid green;
 }
-
-@keyframes chargement {
-  0%{ 
-    transform: scale(1);
-  }
-  100%{
-    transform: scale(0);
-  }
-}
-
-@keyframes spin {
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes spin {
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
 
 /* fin de la partie loader */
 /* Début de la partie header */
