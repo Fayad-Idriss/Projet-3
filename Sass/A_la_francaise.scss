@@ -117,17 +117,20 @@ a{
             margin-top: 40px;
             margin-right: 30px;
             font-size: 1.1em;
-            background-color: black;
-            background-size: cover;
+
+            &:hover{
+            background-image: linear-gradient(to bottom , #FF79DA , #9356DC );
+            color: transparent;
             background-clip: text;
+            -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
         }
+        &::before{
+            transition: 2s;
+        }
+        }
+        
     }
-}
-
-.containeur--icone:hover{
-    background-image: linear-gradient(to bottom , #FF79DA , #9356DC );
-    color: transparent;
 }
 
 /* Fin du Grand block-section gris */
@@ -163,22 +166,15 @@ a{
 
     .carte{
        @include carte();
-       animation-name: animation;
-       animation-duration: 0.5s;
-
     }
 
     .carte-2{
        @include carte();
-       animation-name: animation;
-       animation-duration: 3s;
        
     }
  
     .carte-3{
         @include carte();
-        animation-name: animation;
-        animation-duration: 5s;
     }
          
 
@@ -201,14 +197,6 @@ a{
 
 }
 
-@keyframes animation {
-    0%{
-        transform: scaleX(0);
-    }
-    100%{
-        transform: scaleX(1);
-    }
-}
 
 .containeur-bouton{
     padding: 15px;
@@ -228,27 +216,6 @@ a{
     opacity: 0.7;
 }
 
-.containeur-animation{
-    margin-top: -40px;
-    margin-right: 1px;
-    width: 70px;
-    height: 70px;
-    background-color: #99E2D0;
-    border-radius: 0px 15px 15px 0px;
-    transform-origin: 100% 0%;
-    transform: scaleX(0);
-    transition: transform 1s;
-}
-
-
-
-.carte__animation{
-    display: flex;
-    margin-top: -40px;
-    overflow: hidden;
-    
-}
-
 .carte-euro{
     display: flex;
     align-items: flex-end;
@@ -260,13 +227,21 @@ a{
     padding-right: 20px;
 }
 
-.animation{
-    margin-right: -50px;
+.carte__animation{
+    display: flex;
+    margin-top: -40px;
+    overflow: hidden;
+    
+}
+
+.animation{ 
     width: 50px;
     height: 70px;
     background-color: #99E2D0;
     border-radius: 0px 15px 15px 0px;
-    
+    transform-origin: 100% 0%;
+    transform: scaleX(0);
+    transition: transform 0.8s; 
 }
 
 .carte--icone{
@@ -275,18 +250,20 @@ a{
     margin-top: 50%;
     font-size: 20px;
     color: white;
+    transform: rotate(0deg);
+    transition: transform 0.5s;
 }
 
 .carte:hover{
     
     .animation{
-        margin: 0;
+        transform: scaleX(1);
         transition: 0.5s;
     }
 
     .carte--icone{
         transform: rotate(360deg);
-        transition-duration: 0.5s;
+        transition: transform 0.5s;
         
     }
 }
