@@ -64,7 +64,7 @@ a{
     font-size: 1.5em;
 }
  
- #header-block{
+#header-block{
     padding: 10px;
     height: 35px;
     margin-top: -20px;
@@ -84,9 +84,9 @@ a{
  /* Section image */
 
 
- .img-section{
-     width: 100%;
- }
+.img-section{
+    width: 100%;
+}
 
 
  /* Fin de la section image */
@@ -125,11 +125,12 @@ a{
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
         }
+
         &::before{
             transition: 2s;
         }
-        }
-        
+
+        }        
     }
 }
 
@@ -144,17 +145,14 @@ a{
         background-color: white;
         border-radius: 15px;
         box-shadow: 5px 1px 5px rgba(0,0,0,0.2);
-       
-        
+        overflow: hidden;       
 }
 
 .containeur-carte__titre{
     width: 100%;
+    margin-left: 35px;
     font-family: 'robotothin';
     font-size: 1.2em;
-    
-
-   
 }
 
 
@@ -167,16 +165,6 @@ a{
     .carte{
        @include carte();
     }
-
-    .carte-2{
-       @include carte();
-       
-    }
- 
-    .carte-3{
-        @include carte();
-    }
-         
 
     .carte__liste{
         margin-top: 10px;
@@ -194,7 +182,31 @@ a{
         flex-wrap: nowrap;
 
     }
+}
 
+
+
+.carte-3{
+    width: 90%;
+    height: 70px;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 1px 5px rgba(0,0,0,0.2);
+    overflow: hidden
+
+}
+
+
+.carte-2{
+    width: 90%;
+    height: 70px;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 1px 5px rgba(0,0,0,0.2);
+    overflow: hidden;
+   
 }
 
 
@@ -221,10 +233,11 @@ a{
     align-items: flex-end;
     width: 25px;
     height: 70px;
-    margin-right: 20px;
-    margin-top: -5px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-right: -50px;
+    margin-top: -5px;
+    transition-duration: 0.5s;
 }
 
 .carte__animation{
@@ -266,34 +279,110 @@ a{
         transition: transform 0.5s;
         
     }
+
+    .carte-euro{
+        margin: 0;
+        margin-top: -5px;
+        transition: 0.5s;
+    }
 }
 
 .carte-2:hover{
     
     .animation{
-        margin: 0;
+        transform: scaleX(1);
         transition: 0.5s;
     }
 
     .carte--icone{
         transform: rotate(360deg);
-        transition-duration: 0.5s;
+        transition: transform 0.5s;
         
+    }
+
+    .carte-euro{
+        margin: 0;
+        margin-top: -5px;
+        transition: 0.5s;
     }
 }
 
 .carte-3:hover{
     
     .animation{
-        margin: 0;
+        transform: scaleX(1);
         transition: 0.5s;
     }
 
     .carte--icone{
         transform: rotate(360deg);
-        transition-duration: 0.5s;
+        transition: transform 0.5s;
         
     }
+
+    .carte-euro{
+        margin: 0;
+        margin-top: -5px;
+        transition: 0.5s;
+    }
+}
+
+.carte:nth-child(2){
+    animation-name:  Apparition;
+    animation-duration: 2s;
+}
+
+.carte:nth-child(3){
+    animation-name: Apparition;
+    animation-duration: 2.5s;
+}
+
+.carte:nth-child(4){
+    animation-name: Apparition;
+    animation-duration: 3s;
+}
+
+.carte-2:nth-child(2){
+    animation-name: Apparition;
+    animation-duration: 4s;
+}
+
+.carte-2:nth-child(3){
+    animation-name: Apparition;
+    animation-duration: 4.5s;
+}
+
+.carte-2:nth-child(4){
+    animation-name: Apparition;
+    animation-duration: 5s;
+}
+
+.carte-3:nth-child(2){
+    animation-name: Apparition;
+    animation-duration: 6s;
+}
+
+.carte-3:nth-child(3){
+    animation-name: Apparition;
+    animation-duration: 6.5s;
+}
+
+.carte-3:nth-child(4){
+    animation-name: Apparition;
+    animation-duration: 7s;
+}
+
+
+
+
+@keyframes Apparition {
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scale(X1);
+    }
+    
 }
 
 
@@ -321,7 +410,6 @@ p{
     background-color: black;
     color: white;
     margin-top: -60px;
-
 
     .list-footer{
         margin-left: 20px;
@@ -357,14 +445,26 @@ p{
 
 @media screen and ( min-width: 768px ){
 
+    /* carte */
+
     h3{
         width: 100%;
-        margin-left: 30px;
     }
     
     .containeur-carte .carte{
        width: 30%;
    }
+
+   .containeur-carte .carte-2{
+       width: 30%;
+   }
+
+   .containeur-carte .carte-3{
+       width: 30%;
+   }
+
+
+   /* fin carte */
 
    #containeur{
        height: 700px;
