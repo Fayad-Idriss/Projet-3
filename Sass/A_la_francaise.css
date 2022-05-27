@@ -104,6 +104,7 @@ a {
   margin-top: 40px;
   margin-right: 30px;
   font-size: 1.1em;
+  opacity: 0.1;
 }
 
 #containeur .containeur-titre .containeur--icone:hover {
@@ -113,6 +114,7 @@ a {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  opacity: 1;
 }
 
 #containeur .containeur-titre .containeur--icone::before {
