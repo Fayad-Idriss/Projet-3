@@ -466,6 +466,11 @@ p{
             font-family: 'robotoregular';
         }     
     }
+
+a{
+    text-decoration: none;
+    color: white;
+}
 }
 
 .footer-text{
@@ -501,10 +506,29 @@ p{
        width: 30%;
    }
 
+   .containeur-carte .carte--icone{
+    margin-top: -35%;
+
+    &:hover{
+        transform: rotate(360deg);
+        transition: transform 4s;
+    }
+ }
 
    /* fin carte */
 
    #containeur{
        height: 700px;
    }
+
+   /* footer */
+
+   .list-footer .fa-utensils{
+       margin-top: 2px;
+   }
+    
+   .list-footer .fa-handshake-angle{
+       margin-top: 2px;
+   }
+  
 }

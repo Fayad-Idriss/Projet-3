@@ -239,10 +239,10 @@ input{
     transform: scale(1.1);
     transition-property: transform;
     transition-duration: 1000ms;
-    background-color: #fef0fc;
+    background-color: #99E2D0;
     color: white;
  .fonctionnement__list--icone{
-    color: #9356DC ;
+    color: white ;
 } 
 }
 
@@ -352,23 +352,32 @@ a{
     font-family: 'robotothin';
 }
 
-.block-restaurant--icone{
+.fa-regular{
     font-size: 1.5em;
-    background-color:  black;
-    color: transparent;
-    background-size: cover;
-    background-clip: text;
-    -webkit-background-clip: text;
-    opacity: 0.1;
     
 }
-
-.block-restaurant--icone:hover{
+  
+.fa-regular:hover{
+    opacity: 0;
+}
+  
+.fa-solid{
+    position: relative;
+    left: 45px;
+    font-size: 1.5em;
+    opacity: 0;
+}
+  
+.fa-solid:hover{
     background-image: linear-gradient(to bottom , #FF79DA , #9356DC );
     color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 1.8em;
     opacity: 1;
-    
 }
+
 
 .block-restaurant--nouveau{
     position: absolute;
@@ -429,6 +438,10 @@ a{
         }
     }
 
+a{
+    text-decoration: none;
+    color: white;
+}
 
 }
 

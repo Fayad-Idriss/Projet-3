@@ -509,6 +509,11 @@ p {
   font-family: 'robotoregular';
 }
 
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
 .footer-text {
   margin-left: 15px;
 }
@@ -531,9 +536,27 @@ p {
   .containeur-carte .carte-3 {
     width: 30%;
   }
+  .containeur-carte .carte--icone {
+    margin-top: -35%;
+  }
+  .containeur-carte .carte--icone:hover {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transition: -webkit-transform 4s;
+    transition: -webkit-transform 4s;
+    transition: transform 4s;
+    transition: transform 4s, -webkit-transform 4s;
+  }
   /* fin carte */
   #containeur {
     height: 700px;
+  }
+  /* footer */
+  .list-footer .fa-utensils {
+    margin-top: 2px;
+  }
+  .list-footer .fa-handshake-angle {
+    margin-top: 2px;
   }
 }
 /*# sourceMappingURL=A_la_francaise.css.map */
