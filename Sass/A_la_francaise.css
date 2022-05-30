@@ -119,6 +119,7 @@ a {
   font-size: 1.2em;
   opacity: 0;
   z-index: 1000;
+  transition: 1s;
 }
 
 #containeur .containeur-titre .fa-solid:hover {
