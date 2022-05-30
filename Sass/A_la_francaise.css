@@ -445,8 +445,8 @@ a {
             transform: scaleX(0);
   }
   100% {
-    -webkit-transform: scale(X1);
-            transform: scale(X1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -456,8 +456,8 @@ a {
             transform: scaleX(0);
   }
   100% {
-    -webkit-transform: scale(X1);
-            transform: scale(X1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 

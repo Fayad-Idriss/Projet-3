@@ -387,7 +387,7 @@ a {
   
 }
 
-#solid{
+#solid-1{
   position: relative;
   left: 45px;
   font-size: 1.5em;
@@ -395,7 +395,61 @@ a {
   transition: 1s;
 }
 
-#solid:hover{
+#solid-2{
+  position: relative;
+  left: 45px;
+  font-size: 1.5em;
+  opacity: 0;
+  transition: 1s;
+}
+
+#solid-3{
+  position: relative;
+  left: 45px;
+  font-size: 1.5em;
+  opacity: 0;
+  transition: 1s;
+}
+
+#solid-4{
+  position: relative;
+  left: 45px;
+  font-size: 1.5em;
+  opacity: 0;
+  transition: 1s;
+}
+
+#solid-1:hover{
+  background-image: linear-gradient(to bottom , #FF79DA , #9356DC );
+  color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 1.8em;
+  opacity: 1;
+}
+
+#solid-2:hover{
+  background-image: linear-gradient(to bottom , #FF79DA , #9356DC );
+  color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 1.8em;
+  opacity: 1;
+}
+
+#solid-3:hover{
+  background-image: linear-gradient(to bottom , #FF79DA , #9356DC );
+  color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 1.8em;
+  opacity: 1;
+}
+
+#solid-4:hover{
   background-image: linear-gradient(to bottom , #FF79DA , #9356DC );
   color: transparent;
   background-clip: text;
@@ -422,7 +476,6 @@ a {
 /* Fin de la partie restaurant */
 /* Début du Footer */
 .footer {
-  margin-top: px;
   height: 230px;
   background-color: black;
   color: white;
