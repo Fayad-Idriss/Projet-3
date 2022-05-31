@@ -359,6 +359,23 @@ a{
     }
 }
 
+
+@keyframes Apparition {
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scale(X1);
+    }
+    
+}
+
+p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .carte:nth-child(2){
     animation-name:  Apparition;
     animation-duration: 2s;
@@ -402,26 +419,6 @@ a{
 .carte-3:nth-child(4){
     animation-name: Apparition;
     animation-duration: 7s;
-}
-
-
-
-
-@keyframes Apparition {
-    0%{
-        transform: scaleX(0);
-    }
-    100%{
-        transform: scale(X1);
-    }
-    
-}
-
-
-p{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 
