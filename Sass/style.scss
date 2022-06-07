@@ -217,16 +217,17 @@ input{
     padding: 25px;
     margin-top: 20px;
     text-align: center;
-    width: 80%;
+    width: 75%;
     background-color: #f2f2f2;
     border-radius: 20px;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.2);
     font-family: 'robotoregular';        
 }
 
 
 .fonctionnement__title{
     margin-top: 40px;
-    margin-left: 20px;
+    margin-left: 30px;
     font-family: 'robotobold';
 
 }
@@ -239,8 +240,8 @@ input{
     transform: scale(1.1);
     transition-property: transform;
     transition-duration: 1000ms;
-    background-color: #99E2D0;
-    color: white;
+    background-color: #ebe2f4;
+    color: black;
  .fonctionnement__list--icone{
     color: white ;
 } 
@@ -445,6 +446,7 @@ a{
     z-index: 200;
     background-color: #99E2D0;
     color: rgb(28, 130, 28);
+    border-radius: 4px;
     font-family: 'robotoregular';
 }
 

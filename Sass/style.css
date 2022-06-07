@@ -163,6 +163,7 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+          text-align: center;
 }
 
 #block-text .block-text__titre .block-text__titre--h3 {
@@ -180,6 +181,7 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+          text-align: center;
   font-family: 'robotothin';
 }
 
@@ -230,7 +232,7 @@ input {
 /* Début du Block fonctionnement */
 .fonctionnement__title {
   margin-top: 40px;
-  margin-left: 20px;
+  margin-left: 30px;
   font-family: 'robotobold';
 }
 
@@ -238,10 +240,12 @@ input {
   padding: 25px;
   margin-top: 20px;
   text-align: center;
-  width: 80%;
+  width: 75%;
   background-color: #f2f2f2;
   border-radius: 20px;
+  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.2);
   font-family: 'robotoregular';
+
 }
 
 .fonctionnement__list:hover {
@@ -253,8 +257,8 @@ input {
   transition-property: transform, -webkit-transform;
   -webkit-transition-duration: 1000ms;
           transition-duration: 1000ms;
-  background-color: #99E2D0;
-  color: white;
+  background-color: #ebe2f4;
+  color: black;
 }
 
 .fonctionnement__list:hover .fonctionnement__list--icone {
@@ -275,6 +279,11 @@ input {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+
+.fonctionnement__conteneur{
+  margin-top: -30px;
+}
+
 
 #fonctionnement .fonctionnement__conteneur .fonctionnement__list--numero {
   width: 30px;
@@ -470,6 +479,7 @@ a {
   z-index: 200;
   background-color: #99E2D0;
   color: #1c821c;
+  border-radius: 4px;
   font-family: 'robotoregular';
 }
 
@@ -477,7 +487,7 @@ a {
 /* Début du Footer */
 .footer {
   height: 230px;
-  background-color: black;
+  background-color: rgb(44, 43, 43);
   color: white;
 }
 
